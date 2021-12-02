@@ -25,3 +25,70 @@ for (const fruta of frutas) {
 for (const char of frase) {
   console.log(char);
 }
+
+// SPREAD E FOR...OF
+
+/* Com o for loop podemos manipular cada um dos elementos do
+objeto iterável. */
+
+const buttons = document.querySelectorAll("button");
+
+for (const btn of buttons) {
+  btn.style.background = "blue";
+}
+
+console.log(...buttons);
+
+// APENAS ITERÁVEL
+
+/* O for...of não irá funcionar em um objeto comum que não seja
+iterável. */
+
+const carro = {
+  marca: "Honda",
+  ano: 2018,
+};
+
+// Erro, não é iterável
+// for (const propriedade of carro) {
+//   console.log(propriedade);
+// }
+
+// FOR...IN
+
+/* Este loop irá retornar a chave(key) de todas as propriedades
+enumeráveis (que não sejam símbolos) de um objeto. */
+
+Object.defineProperties(carro, {
+  rodas: {
+    value: 4,
+    enumerable: true,
+  },
+});
+
+for (const propriedade in carro) {
+  console.log(propriedade, carro[propriedade]);
+}
+
+// ARRAYS E FOR...IN
+
+/* Uma Array é um objeto, porém a chave de cada valor é igual ao seu
+index. */
+
+for (const index in frutas) {
+  console.log(index);
+}
+
+for (const index in frutas) {
+  console.log(index);
+  console.log(frutas[index]);
+}
+
+// DO / WHILE
+
+/* Outro tipo de loop é o Do / While. não é muito utilizado. */
+
+let i = 0;
+do {
+  console.log(i++);
+} while (i <= 5);
