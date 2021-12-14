@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Validar CPF</title>
+  </head>
+  <body>
+    <style>
+      label {
+        display: block;
+        font-family: "Courier New", Courier, monospace;
+        margin: 10px 0 5px 0;
+      }
+      input {
+        width: 200px;
+        padding: 5px;
+        border: 2px solid black;
+        font-size: 1em;
+        box-sizing: border-box;
+      }
+      input::placeholder {
+        color: #c0c0c0;
+      }
+
+      .erro {
+        border: 2px solid red;
+      }
+      .valido {
+        border: 2px solid green;
+      }
+
+      span.erro {
+        display: none;
+      }
+      .erro.ativar {
+        display: block;
+      }
+    </style>
+    <form action="">
+      <label for="cpf">CPF</label>
+      <input type="text" name="cpf" id="cpf" placeholder="***.***.***-**" />
+      <label for="email">Email</label>
+      <input type="text" name="email" id="email" />
+    </form>
+
+    <script type="module" src="script.js"></script>
+  </body>
+</html>
