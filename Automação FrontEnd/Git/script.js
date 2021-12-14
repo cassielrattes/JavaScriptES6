@@ -33,3 +33,64 @@ adicionamos todos os arquivos. */
 
 /* $ git commit -m 'Descrição' */
 /* Irá fazer o commit do código adicionado com uma mensagem. */
+
+// CRIAR REPOSITÓRIO NO GITHUB
+
+/* Github */
+/* Criar conta: https://github.com/ */
+
+/* Novo Repositório */
+/* https://github.com/new */
+
+/* Adicionar diretório remoto */
+/* 
+    $ git remote add origin 
+    https://github.com/seuusuario/seurepositorio.git 
+*/
+
+/* Push do primeiro commit */
+/* $ git push -u origin master */
+
+// BRANCHING
+
+/* Branch */
+/* Uma das principais vantagens do git é a possibilidade de criarmos
+'ramificações'. Assim podemos trabalhar em funcionalidades adicionais para
+um projeto, sem modificarmos a 'ramificação principal', o master. */
+
+/* $ git branch nomebranch */
+/* Toda vez quer formos adicionar uma nova funcionalidade, devemos iniciar
+criando um novo branch ao invés de fazermos alterações direto no master. O
+que for modificado no branch não afetara o master. */
+
+/* $ git checkout nomebranch */
+/* Irá mudar de branch. Podemos usar o atalho
+$ git checkout -b "novobranch", assim ele cria e muda de branch ao
+mesmo tempo. */
+
+// WORKFLOW
+
+/* Sempre crie um branch */
+/* Toda funcionalidade nova, crie um branch para desenvolver a mesma. 
+$ git checkout -b feature1 */
+
+/* Após o desenvolvimento e commit, vá até o
+master e veja se existem mudanças */
+/* $ git checkout master e $ git pull */
+
+/* Volte para o branch e dê um merge com o 
+master */
+/* $ git checkout feature1 e depois $ git merge master */
+
+// LIDANDO COM PULL REQUEST
+
+/* No Github */
+/* Agora você possui um novo branch no github e pode fazer o pull request
+(juntar ao master). */
+
+/* Compare e Pull Request */
+/* Pode adionar comentários. Create Pull Request */
+
+/* Merge Pull Request */
+/* Geralmente é o lider do projeto / responsável por fazer o review do seu
+código. Pode deletar o branch após o merge com o master. */
