@@ -94,3 +94,30 @@ master */
 /* Merge Pull Request */
 /* Geralmente é o lider do projeto / responsável por fazer o review do seu
 código. Pode deletar o branch após o merge com o master. */
+
+// MAIS GIT
+
+/* .gitignore */
+/* Lista de arquivos que não devem ser manipulados pelo git. node_modules é
+um bom exemplo. */
+
+/* Commit sem texto */
+/* Ao usar o $ git commit você entra no modo completo de comentário,
+com um editor de texto direto na linha de comando. Utilize esc + :wq para
+sair do mesmo. */
+
+/* Bitbucket */
+/* Permite repositórios privados e gratuitos. https://bitbucket.org/product */
+
+// GITHUB PAGES
+
+/* Criar repositório */
+/* O nome deve ser seuusuario.github.io */
+
+/* HTML Simple */
+/* O site só funcionará em html/css/js simples, sem linguagem de servidor */
+
+/* Qualquer projeto */
+/* Qualquer projeto poderá ter uma página para o mesmo. Vá em Settings >
+GitHub Pages > selecione master branch e salve. E acesse
+seuusuario.github.io/repositorio/ */
